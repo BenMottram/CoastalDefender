@@ -1,0 +1,38 @@
+<html>
+	<head>
+		{% load staticfiles %}
+		<link rel="icon" href="favIcon.gif" type="image/gif" sizes="16x16">
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.8.0.min.js"></script>
+		<link href='http://fonts.googleapis.com/css?family=Ubuntu:400,400italic' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="{% static "coastStyle.css" %}">
+		<script src="{% static "siteUtilities.js" %}" type="text/javascript"></script>
+		{% block extrahead%} 
+		{% endblock %}
+		
+	</head>
+	
+	<body>
+		
+		{% block nav %}
+		<div id="navMenu">
+			<h1>Coastaldefender</h1></br>
+			<ul id="navBar" class="nav">
+				<li>{% block nav-home %}<a class="navOption" href="{% url CDgame.views.startMenu %}">Home</a>{% endblock %}</li>
+				<li>{% block nav-rules %}<a class="navOption" href="{% url CDgame.views.rulesMenu %}">Rules</a>{% endblock %}</li>
+				<li>{% block nav-game %}<a class="navOption" href="{% url CDgame.views.buildFrame %}">New Game</a>{% endblock %}</li>
+				<li>{% block nav-links %}<a class="navOption" href="{% url CDgame.views.linksMenu %}">Links</a>{% endblock %}</li>
+				<li>{% block nav-questions %}<a class="navOption" href="{% url CDgame.views.questionMenu %}">Questionaire</a>{% endblock %}</li>
+			</ul>
+		</div>
+        {% endblock %}
+	
+		<div id='main'>
+			{% block initial%}
+			{% endblock %}
+			{% block content %}
+			{% endblock %}
+		</div>
+	</body>
+	{% block controls %}
+	{% endblock %}
+</html>

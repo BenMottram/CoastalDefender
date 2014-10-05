@@ -1,0 +1,160 @@
+html *
+{
+font-family: 'Ubuntu', sans-serif; !important;
+}
+
+body {
+background-color: #C1CDCD;
+}
+
+h1 {
+font-size: 30px;
+text-align: center;
+color: white;
+margin: 2px auto;
+margin-bottom: 8px;
+padding:0;
+text-shadow: 2px 2px 2px rgba(0, 78, 218, 0.83);
+}
+
+div#navMenu {
+width: 1020px;
+height: 130px;
+text-align: center;
+margin : 2px auto;
+margin-bottom: 10px;
+background-image:url('topDiv.png'); 
+}
+
+ul.nav {
+font-size: 24px;
+margin: 2px auto;
+}
+
+.nav li{
+position:relative;
+display:inline;
+text-align: center;
+padding:0.3em 1em;
+bottom:10px;
+}
+
+a.navOption {
+text-decoration:none;
+padding:0.2em 0.75em;
+color: white;
+text-shadow: 2px 2px 2px rgba(0, 78, 218, 0.83);
+}
+
+ul.menu {
+list-style-type:none;
+}
+
+.menu li a {
+font-size: 20px;
+text-decoration:none;
+margin: 2px auto;
+list-style-type:none;
+padding:0;
+color: black;
+}
+
+a.revertTurnItem {
+font-size: 12px;
+text-decoration:none;
+margin: 2px auto;
+list-style-type:none;
+padding:0;
+color: black;
+}
+
+#navBar li a.hover {
+    background-color: #42647F;
+	text-decoration:underline;
+}
+
+div#main {
+font-size: 10pt;
+font-family: Verdana, Geneva, Arial, Helvetica, Sans-serif;
+color: black;
+width:1020px;
+margin:4px auto;
+background-color: white;
+}
+
+div#buttonsDiv {
+width:1024px;
+margin-left:auto;
+margin-right:auto;
+}
+
+div#tweetButton {
+width:1024px;
+margin-left:auto;
+margin-right:auto;
+}
+
+
+div#turnMenu {
+width:1024px;
+margin-left:auto;
+margin-right:auto;
+}
+
+#over_map { 
+position: absolute; 
+background-color: transparent; 
+top: 10px; 
+left: 10px; 
+z-index: 99; 
+background: white; 
+}
+ 
+#over_map_right {
+position: absolute; 
+background-color: transparent; 
+top: 10px; 
+right: 10px; 
+z-index: 99; 
+background: white; 
+}
+
+#over_map_rightB {
+position: absolute; 
+background-color: transparent; 
+top: 28px; 
+right: 10px; 
+z-index: 99; 
+background: white;
+}
+
+#wrapper { position: relative; }
+
+
+.context_menu{
+	background-color:white;
+	border:1px solid gray;
+}
+.context_menu_item{
+	padding:3px 6px;
+}
+.context_menu_item:hover{
+	background-color:#CCCCCC;
+}
+.context_menu_separator{
+	background-color:gray;
+	height:1px;
+	margin:0;
+	padding:0;
+}
+
+div.imgDiv{
+display: inline-block;
+margin:2px;
+padding:2px 10px;
+}
+
+div.textDiv{
+margin: 4px;
+padding:10px;
+}
