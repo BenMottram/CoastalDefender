@@ -36,7 +36,7 @@ The game board used the eShapes.js file and its methods to draw a the hex grid. 
 
 The Game board is a single object, with each hex as also an individual object.  With the advancement of the turn each hex is checked against the returned data to change its environment if necessary.
 
-######Policy Designation and Turn advancement
+#####Policy Designation and Turn advancement
 ---------------------------------------------
 The Game board also uses a context menu on each hex that is opened via a right click.  This gives the player the option to designate the hex one of the policy types.  These policy designations are value modifiers which are collected at the end of each turn and sent to the server side along with the current game state in a large JSON string.  Upon return the augmented string is then applied to each individual hex on the board to represent the new game state.
 
